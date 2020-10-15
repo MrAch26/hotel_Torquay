@@ -53,3 +53,4 @@ static/
 *env
 #vs code settings
 *.vscode/
+media/**
