@@ -50,7 +50,7 @@ static/
 # Mac Stuff
 .DS_Store
 #virtualenvs
-*env
+*.vm/
 #vs code settings
 *.vscode/
 media/**
