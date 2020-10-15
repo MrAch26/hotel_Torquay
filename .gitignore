@@ -47,3 +47,4 @@ env/
 !**/migrations/__init__.py
 static/
 .idea/
+.DS_Store
