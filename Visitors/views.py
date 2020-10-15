@@ -2,4 +2,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'visitors/index.html')
+    context ={
+        'Title':"Torque Hotels"
+    }
+    return render(request, 'visitors/index.html', context=context)
