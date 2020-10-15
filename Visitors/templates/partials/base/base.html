@@ -10,20 +10,24 @@
     <link rel="stylesheet" href={% static 'css/style.css' %}> </head>
 
 <body>
+    <div class="logo-wrapper">
+        <img class="img-logo" src="{% static 'content/img/manage.svg'%}" % }>
+    </div>
     <div id="bg-video-container">
         <video autoplay muted playsinline loop type='video/mp4' id="bg-video" src="{% static 'content/vid/videoplayback.mp4' %}">
         </video>
     </div>
     {% include 'partials/nav/nav.html' %}
-    <main>
+    <div class="sidebar-btn-wrapper" style="cursor:pointer" onclick="openNav()">&#9776;</div>
+    <main id="main">
         <!-- use content for all your views -->
         {% block content%} {% endblock %}
     </main>
     <!-- bootstrap requirements -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="{% static 'js/script.js' %}"></script>
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="{% static 'js/script.js' %} "></script>
 </body>
 
 </html>
