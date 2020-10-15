@@ -8,7 +8,10 @@ from .forms import UserSignupForm
 
 
 def index(request):
-    return render(request, 'visitors/index.html')
+    context ={
+        'Title':"Torque Hotels"
+    }
+    return render(request, 'visitors/index.html', context=context)
 
 
 class UserSignUp(CreateView):
