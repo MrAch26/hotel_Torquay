@@ -12,7 +12,7 @@
 <body>
     <video autoplay muted loop id="bg_video">
         <source src ="{% static 'content/vid/videoplayback.mp4' %}">
-    </video> {% include 'partials/nav.html' %}>
+    </video> {% include 'partials/nav.html' %}> {% include 'partials/nav/nav.html' %}
     <main>
         <!-- use content for all your views -->
         {% block content%} {% endblock %}
