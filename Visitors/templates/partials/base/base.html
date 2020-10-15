@@ -10,9 +10,11 @@
     <link rel="stylesheet" href={% static 'css/style.css' %}> </head>
 
 <body>
-    <video autoplay muted loop id="bg_video">
-        <source src ="{% static 'content/vid/videoplayback.mp4' %}">
-    </video> {% include 'partials/nav/nav.html' %}
+    <div id="bg-video-container">
+        <video autoplay muted playsinline loop type='video/mp4' id="bg-video" src="{% static 'content/vid/videoplayback.mp4' %}">
+        </video>
+    </div>
+    {% include 'partials/nav/nav.html' %}
     <main>
         <!-- use content for all your views -->
         {% block content%} {% endblock %}
